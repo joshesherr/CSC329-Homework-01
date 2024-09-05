@@ -5,10 +5,11 @@ package org.example;
  * @author Josh Sherry
  */
 public class House {
-    //Private members
+    //region Private members
     private String owner;
     private float value;
-
+    //endregion
+    
     /**
      * Constructor with parameters.
      * @param owner House's owner

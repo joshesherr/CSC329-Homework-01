@@ -22,7 +22,7 @@ public class PriorityQueueList implements PriorityQueue {
         this.length = listCopy.length;
     }
 
-    //Private members
+    //region Private members
     /**
      * A node to hold house data, priority and which node is next in the queue.
      */
@@ -41,6 +41,8 @@ public class PriorityQueueList implements PriorityQueue {
      * this variable goes up when an element is added and down when an element is removed.
      */
     private int length = 0;
+
+    //endregion
 
     /**
      * Creates a deep copy of all elements in the list and adds them to a new list.
@@ -70,7 +72,7 @@ public class PriorityQueueList implements PriorityQueue {
         return list;
     }
 
-    //region implemented methods
+    //region Implemented methods
 
     public House peek() {
         return (!isEmpty())? head.data : null;
